@@ -1,10 +1,23 @@
-# nlp-reviews
-
+## 🚀 Data Exploration and NLP Modeling for Review Analysis
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
+## 📊 Project Overview
+This NLP project focuses on analyzing and processing reviews from Trustpilot. It includes data scraping, cleaning, summarization, translation, and predictive modeling. Developed by Nicolas BERLIOZ and Loick CUER as part of the ESILV NLP course.
 
-d
+## 🎯 Key Objectives
+Scrape reviews from Trustpilot
+Clean and preprocess the collected data
+Develop models for review summarization and sentiment prediction
+Create interactive Streamlit applications for prediction and summarization
+
+##🛠️ Technologies Used
+Python: Core programming language
+Pandas: Data manipulation and analysis
+Scikit-learn: Machine learning modeling
+Streamlit: Interactive web applications
+Natural Language Processing (NLP): Text processing and analysis
+
 
 ## Project Organization
 
