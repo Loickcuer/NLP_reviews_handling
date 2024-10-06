@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen
 import requests
 import time
-from alive_progress import alive_bar
 
 my_urls = [
     "https://fr.trustpilot.com/categories/clothing_store",
@@ -79,12 +78,6 @@ for url in my_urls:
     comp_info = get_companies_info(url)
     pages, _ = get_pages(comp_info)
     total_pages += sum(pages.values())
-
-with alive_bar(total_pages, title="Scraping progress", bar="classic", spinner="classic") as bar:
-    for url in my_urls:
-        comp_info = get_companies_info(url)
-        pages, _ = get_pages(comp_info)
-        all_reviews.extend(get_reviews(pages, bar))
 
 data = pd.DataFrame(all_reviews)
 data.to_parquet('data.parquet', index=False)
